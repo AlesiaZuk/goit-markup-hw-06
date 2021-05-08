@@ -852,7 +852,8 @@ li {
   transition: color 250ms var(--transition-timing-function);
 }
 
-.button-modal:hover {
+.button-modal:hover,
+.button-modal:focus {
   color: var(--accent-color);
 }
 
