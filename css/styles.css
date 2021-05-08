@@ -834,6 +834,10 @@ li {
   top: 0px;
   right: 0px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 30px;
   height: 30px;
   padding: 0px;
@@ -877,6 +881,7 @@ li {
 
 .conteiner-modal {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .icon-modal {
@@ -891,8 +896,7 @@ li {
 .modal-input {
   width: 100%;
   height: 40px;
-  padding-left: 42px;
-  margin-bottom: 10px;
+  padding: 0px 0px 0px 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -950,7 +954,7 @@ textarea::placeholder {
   width: 16px;
   height: 16px;
   margin-right: 7px;
-  border: 1px solid var(--title-text-color);
+  border: 2px solid var(--title-text-color);
   border-radius: 3px;
 }
 
@@ -961,6 +965,14 @@ textarea::placeholder {
   background-size: contain;
   background-color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.input-checkbox:focus + .privacy-label::before {
+  border-color: var(--accent-color);
+}
+
+.input-checkbox:checked:focus + .privacy-label::before {
+  border-color: var(--title-text-color);
 }
 
 .privacy-link {
